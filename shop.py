@@ -14,3 +14,4 @@ def market_page():
         {'id': 1, 'name': 'Keyboard', 'barcode': '916381830013', 'price': 800}
     ]
     return render_template('market.html',item=item)  #returns
+#Template inheritance
