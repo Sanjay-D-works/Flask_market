@@ -20,3 +20,11 @@ python
 >>> from market import db
 >>> db.create_all()
 >>> exit()
+
+
+📂 Project Structure
+Flask_market/
+├── shop.py
+├── market.db
+├── templates/
+
