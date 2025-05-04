@@ -26,7 +26,7 @@ python
 Flask_market/
 ├── shop.py
 ├── market.db
-├── templates/
+├── templates
 
 
 📄 License
