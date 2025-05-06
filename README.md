@@ -23,7 +23,9 @@ python
 
 
 📂 Project Structure
+
 Flask_market/
+
 ├── shop.py
 ├── market.db
 ├── templates
