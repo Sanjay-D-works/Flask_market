@@ -1,11 +1,10 @@
-from click import password_option
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 
 
-class RegisterFrom(FlaskForm):
-    username = StringField(label='username')
-    email_address = StringField(label='email')
-    password1 = PasswordField(label='password')
-    password2 = PasswordField(label='password')
-    submit = SubmitField(label='submit')
+class RegisterForm(FlaskForm):
+    username = StringField(label='User Name:')
+    email_address = StringField(label='Email Address:')
+    password1 = PasswordField(label='Password:')
+    password2 = PasswordField(label='Confirm Password:')
+    submit = SubmitField(label='Create Account')
