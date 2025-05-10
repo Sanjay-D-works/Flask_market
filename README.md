@@ -18,7 +18,9 @@ Open a Python shell:
 
 python
 >>> from market import db
+
 >>> db.create_all()
+
 >>> exit()
 
 
