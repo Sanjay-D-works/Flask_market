@@ -48,6 +48,12 @@ Flask_market/
 ├── market.db
 ├── templates
 
+📌 To-Do
+ Add unit tests
+ Deploy to Heroku/Vercel
+ Add item categories/tags
+ Improve UI/UX
+
 
 📄 License
 This project is open source under the MIT License.
