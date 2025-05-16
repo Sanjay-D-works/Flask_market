@@ -54,6 +54,9 @@ Flask_market/
  Add item categories/tags
  Improve UI/UX
 
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
 
 📄 License
 This project is open source under the MIT License.
