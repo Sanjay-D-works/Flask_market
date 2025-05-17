@@ -55,7 +55,7 @@ Flask_market/
  Improve UI/UX
 
 🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change..
 
 
 📄 License
