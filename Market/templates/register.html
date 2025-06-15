@@ -3,6 +3,35 @@
 Register page
 {% endblock %}
 
-{% block title %}
-<h1>Register page</h1>
+{% block content %}
+<body class="text-center">
+        <div class="container">
+            <form method="POST" class ="form_register" style="color:white">
+                <img class="mb-4" src="/Users/sanjayd/Flaskshop/image/vegetables-shopping-cart-trolley-grocery-logo-icon-design-vector-171090350.jpg.webp">
+                <h1 class="h3 mb-3 font-weight-normal">
+                    Please Create your Account
+                </h1>
+                <br>
+
+                {{ form.username.label() }}
+                {{ form.username(class="form-control", placeholder="User Name") }}
+
+                {{ form.email_address.label() }}
+                {{ form.email_address(class="form-control", placeholder="Email Address") }}
+
+                {{ form.password1.label() }}
+                {{ form.password1(class="form-control", placeholder="Password") }}
+
+                {{ form.password2.label() }}
+                {{ form.password2(class="form-control", placeholder="Confirm Password") }}
+
+                <br>
+
+                {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+            </form>
+        </div>
+</body>
+
+
 {% endblock %}
