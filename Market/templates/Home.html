@@ -1,8 +1,60 @@
 {% extends 'base.html' %}
+
 {% block title %}
-    Home Page
+    Welcome to FlaskShop 🛒
 {% endblock %}
 
 {% block content %}
-    This is our content for the Home Page
+<style>
+    /* Animation on hover */
+    .feature-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 255, 128, 0.4);
+        cursor: pointer;
+    }
+</style>
+
+<div class="container mt-5">
+    <!-- Hero Section -->
+    <div class="text-center p-5 rounded shadow-lg" style="background: linear-gradient(135deg, #2c3e50, #4ca1af); color: white;">
+        <h1 class="display-4">Welcome to <span style="color: #00ff99;">FlaskShop</span> 🛍️</h1>
+        <p class="lead mt-3">Your one-stop shop for amazing deals on quality products. Ready to explore?</p>
+        <hr class="bg-light">
+        <a href="{{ url_for('market_page') }}" class="btn btn-lg btn-outline-light mt-3 px-5">🛒 Start Shopping</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row text-center mt-5">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">🛡️ Secure Payment</h5>
+                    <p class="card-text">We ensure 100% secure and safe payment transactions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">🚚 Fast Delivery</h5>
+                    <p class="card-text">Swift and reliable delivery service across your city.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">📦 Quality Products</h5>
+                    <p class="card-text">Browse a wide range of top-rated items just for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
